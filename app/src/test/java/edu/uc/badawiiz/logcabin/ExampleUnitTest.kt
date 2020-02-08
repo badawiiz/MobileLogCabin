@@ -35,5 +35,12 @@ class ExampleUnitTest {
         assertEquals(8, 5 + 3)
     }
 
+    fun confirmUsername_outputsUsername () {
+
+        var username:Username = Username("badawiiz@mail.uc.edu")
+        assertEquals("badawiiz@mail.uc.edu", username.toString())
+
+    }
+
 
 }
