@@ -1,5 +1,6 @@
 package edu.uc.badawiiz.logcabin
 
+import edu.uc.badawiiz.logcabin.dto.Username
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -35,9 +36,11 @@ class ExampleUnitTest {
         assertEquals(8, 5 + 3)
     }
 
+
+    @Test
     fun confirmUsername_outputsUsername () {
 
-        var username:Username = Username("badawiiz@mail.uc.edu")
+        var username: Username = Username("badawiiz@mail.uc.edu")
         assertEquals("badawiiz@mail.uc.edu", username.toString())
 
     }
